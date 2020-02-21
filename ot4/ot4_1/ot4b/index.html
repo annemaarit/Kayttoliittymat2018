@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- 	file: index.html
+		desc: Perhe Parkosen matkapäiväkirjat blogin Norja -pääsivu.
+			  Tehty Bootstrap -alustalle:
+			  https://startbootstrap.com/template-overviews/blog-home/
+		date: 3.3.2018
+		auth: Maarit Parkkonen -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="traveldiary">
+    <meta name="author" content="Maarit Parkkonen">
+
+    <title>Matkapäiväkirja blogi</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/paivakirja.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Perhe Parkkonen matkalla</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Norja
+                <span class="caret"></span></a>
+				<ul class="dropdown-menu"> <!--tämän lisäsin alustaan-->
+					<li><a href="#">Junkerdal</a></li>
+					<li><a href="#">Tranoy</a></li>
+					<li><a href="#">Lofootit</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Info</a></li>
+					<li><a href="#">Vihje</a></li>
+				</ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kiina</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Venäjä</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Suomi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+
+          <h1 class="my-4 otsikko">Norja
+            <small>2017</small>
+          </h1>
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+            <img class="card-img-top" src="kuvat/junkerdal.jpg" alt="Junkerdal">
+            <div class="card-body">
+              <h2 class="card-title">Junkerdal</h2>
+              <p class="card-text">Ylitimme Norjan rajan Junkerdalin kohdalla. Vajaa tuntia aiemmin maisemat olivat alkaneet
+					Ruotsin puolella muuttua vuoristomaiseksi. Ensimmäinen yli kilometrin korkuinen vuori aiheutti perheessämme 
+					suurta innostusta..</p>
+              <a href="#" class="btn btn-primary">Lue lisää &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              20.8.217 by
+              <a href="#">Maarit Parkkonen</a>
+            </div>
+          </div>
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+            <img class="card-img-top" src="kuvat/tranoy.jpg" alt="Tranoy">
+            <div class="card-body">
+              <h2 class="card-title">Tranoy</h2>
+              <p class="card-text">Tranoyn majakka sijaitsee Norjan luoteisosassa, Hamaroystä pohjoiseen Norjanmeren rannalla pienellä kalliosaarella. 
+					Se on ollut toiminnassa vuodesta 1864 lähtien..</p>
+              <a href="#" class="btn btn-primary">Lue lisää &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              21.8.217 by
+              <a href="#">Maarit Parkkonen</a>
+            </div>
+          </div>
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+            <img class="card-img-top" src="kuvat/lofootit.jpg" alt="Lofootit">
+            <div class="card-body">
+              <h2 class="card-title">Lofootit</h2>
+              <p class="card-text">Lofootit on saariryhmä Pohjois-Norjassa. Saarille on kiinteä tieyhteys mantereelta valtatie E10 pitkin.
+					Tie kulkee saarten läpi siltojen ja tunneleiden kautta ja päättyy Moskenesøyan Å:ssa. Lofootit on pohjolan
+					paratiisi..</p>
+              <a href="#" class="btn btn-primary">Lue lisää &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              22.8.217 by
+              <a href="#">Maarit Parkkonen</a>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <ul class="pagination justify-content-center mb-4">
+            <li class="page-item disabled">
+              <a class="page-link" href="#">&larr; Edelliset</a>
+            </li>
+            <li class="page-item ">
+              <a class="page-link" href="#">Seuraavat &rarr;</a>
+            </li>
+          </ul>
+
+        </div>
+				  
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+		
+         <!-- Side Widget -->
+         <div class="card my-4">
+            <h5 class="card-header">Me</h5>
+			<img class="card-img-top" style="padding:10px" src="kuvat/perhe.jpg" alt="perhe">
+            <div class="card-body">
+              Norjan matka kesällä 2017 oli meidän perheemme ISO reissu. Se oli tärkeä monesta syystä ja kovin odotettu.
+            </div>
+         </div>
+		
+         <!-- Side Widget -->
+         <div class="card my-4">
+            <h5 class="card-header">Info</h5>
+			<img class="card-img-top" style="padding:10px" src="kuvat/pienikartta.gif" alt="perhe">
+            <div class="card-body">
+              <a href="#" class="btn btn-primary">Perustiedot &rarr;</a>
+            </div>
+         </div>
+		 
+         <!-- Side Widget -->
+         <div class="card my-4">
+            <h5 class="card-header">Kerro</h5>
+            <div class="card-body">
+			  <p>Norja vei meidän sydämemme ja palaamme vielä takaisin.</p>
+              <a href="#" class="btn btn-primary">Lähetä vihje! &rarr;</a>
+            </div>
+         </div>
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Maarit Parkkonen 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

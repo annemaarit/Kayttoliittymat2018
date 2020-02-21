@@ -1,0 +1,190 @@
+/* 	file: ot3.css
+	desc: ot3.html sivun tyylimääritykset
+	date: 28.2.2018
+	auth: Maarit Parkkonen */
+	
+/*värit kuvasta: vector3
+vaaleaKelta	#FFDD74
+ruskea		#403A23
+kulta		#F09926
+haaleaKelta	#D69B57
+musta		#0D0D0C
+*/
+
+/*testauksessa IE 8 ja vanhemmat eivät tunnista vw mittaa*/
+	
+* {
+	box-sizing: border-box;
+	margin:0;
+}
+
+body {
+	font-family: 'Source Sans Pro', bold;
+	font-size: 100%;
+	margin:0.5vw;
+}
+
+.header, .col-4{
+	background-color: #403A23;
+	color: #D69B57;	
+	width:100%;
+}
+
+.lyhyt {
+	display: block;
+}
+
+.pitka {
+	display: none;
+}
+
+.header i {
+    text-align: right;
+	margin:0;
+	padding:0;
+	float:right;
+	letter-spacing:0;
+}
+
+.icons{
+	position:absolute;
+	top:0.5vw;
+	left:84%;	
+}
+
+.container{
+	margin: 1vw;	
+}
+
+.col-1{width:100%;}
+.col-3{width:100%;}
+.col-4{ text-align: center;}
+
+[class*="col-"]{
+	float:left;
+	padding:1.5vw;
+}
+
+.video{
+	position: relative;
+	height:0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	margin:0.5vw;
+}
+
+.video iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3{
+	padding:2vw;
+	letter-spacing:0.5vw;
+	font-family: 'Delius Swash Caps', cursive;
+}
+
+.header i{font-size:8vw;}
+h1{font-size:7vw;}
+h2{font-size:6vw;}
+h3{font-size:5.5vw;}
+
+h2, h3 {
+	background-color: #D69B57; 
+	color: #403A23;
+}
+
+p {
+	font-size:5vw;
+	margin: 2vw 0;
+}
+
+hr { margin: 2vw 0;}
+
+@media only screen and (min-width:480px){
+	.lyhyt {display: none;}
+	.pitka {display: block;}
+	.left{width:50%;}
+	.right{width:50%;}
+	h1, h2, h3{
+		padding:1.5vw;
+		letter-spacing:0.1vw;
+		line-height:4vw;}
+	h1{font-size:5vw;}
+	h2{font-size:4vw;}
+	h3{font-size:3.5vw;}
+	p {font-size:3vw;}
+	.header i{font-size:6vw;}
+	.icons {left:88%};
+}
+
+
+@media only screen and (min-width:800px){
+	.left{width:33.33%;}
+	.right{width:33.33%;}
+	.col-3{width:33.33%;}	
+	hr { margin: 0.5vw 0;}	
+	[class*="col-"]{
+		padding:0.75vw;
+	}	
+	h1, h2, h3{
+		padding:1vw;
+		letter-spacing:0;
+		line-height:3vw;
+	}		
+	h1{font-size:4vw;}
+	h2{font-size:3vw;}
+	h3{font-size:2.5vw;}	
+	p {
+		font-size:2vw;
+		margin: 0.5vw 0;
+	}
+	.header i{font-size:4.7vw;}
+	.icons {left:90%};
+}	
+	
+
+@media only screen and (min-width:1024px){
+	.container{
+		max-width:960px;
+		margin:auto;
+	}		
+	h1{	
+		font-size:3.5vw;
+		padding:1vw;}	
+	h2, h3{
+		padding:0.5vw;
+		line-height:2.2vw;}
+	h2{font-size:2.5vw;}
+	h3{font-size:2vw;}	
+	p {
+		font-size:1.5vw;
+		margin: 0.5vw 0;
+	}
+	.header i{font-size:4vw;}
+	.icons {left:91%};
+}
+
+@media only screen and (min-width:1400px){
+	h1, h2, h3{line-height:1.5vw;}
+	h1{font-size:2.5vw;}
+	h2, .header i{font-size:1.5vw;}
+	h3{font-size:1.3vw;}	
+	p {
+		font-size:1vw;
+		margin: 0.5vw 0;
+	}
+	.header i{font-size:3vw;}
+	.icons {left:93%};
+	}
+
+		

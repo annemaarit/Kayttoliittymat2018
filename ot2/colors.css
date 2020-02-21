@@ -1,0 +1,130 @@
+/* 	file: colors.css
+	desc: tyyli- ja mediamääritykset
+	date: 10.2.2018
+	auth: Maarit Parkkonen */
+
+	* {
+		box-sizing: border-box;
+	}
+	
+	body{
+		margin: 0px;
+		padding: 0px;
+		font-size: 100%;
+	}
+	
+	/*keskittämistä varten isommilla näytöillä*/
+	#tausta{
+		margin: 0px;
+	}
+	
+	/*joustavia laatikoita*/
+	.colors, .laatikko, .icons{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 5px 5px 5px 2px #888888;
+		-moz-box-shadow: 5px 5px 5px 2px #888888;
+		-webkit-box-shadow:  5px 5px 5px 2px #888888;
+		margin:10px;
+		height:150px;
+		text-align:center;
+	}
+	
+	/*kokonainen laatikko on linkki*/
+	a {
+		text-decoration: none;
+	}	
+	
+	/*laatikoiden sisällöt*/	
+	p {
+		font-size:3em;
+		color: black;
+		font-family: Impact, Charcoal, sans-serif;	
+		text-transform: uppercase;
+	}
+	
+	.musta p{
+		color: white;
+	}	
+	
+	.kuvake{
+		font-size:1em;
+	}	
+	
+	/*ilman tätä IE 11 ja 10 asemoi laatikoiden sisällöt liian alas*/
+	.kuvake, .laatikko p{
+		margin: auto;		
+	}
+	
+	.icons{
+		display:none;
+	}
+	
+	/*värimääritykset*/
+	
+	.musta{background-color: #000000;}
+	
+	/*Väripaletista: http://colorpalettes.net/color-palette-3694/*/
+	.sininen{background-color: #01b4bc;}	
+	.keltainen{background-color: #f6d51f}	
+	.ruskea{background-color: #fa8925;}
+	.pinkki{background-color: #fa5457;}	
+	
+	/*sävyt: https://color.adobe.com/fi/create/color-wheel/
+	värisääntö: monokromaattinen*/
+	
+	/*sinisen sävyt*/
+	.s1{background-color: #4EF7FF;}	
+	.s2{background-color: #01F4FF;}	
+	.s3{background-color: #277C7F;}
+	.s4{background-color: #01C3CC;}	
+	
+	/*keltaisen sävyt*/
+	.k1{background-color: #FFE96D;}	
+	.k2{background-color: #FFDD20;}	
+	.k3{background-color: #7F7436;}
+	.k4{background-color: #CCB11A;}
+	
+	/*ruskean sävyt*/
+	.r1{background-color: #FFB472;}	
+	.r2{background-color: #FF8C26;}	
+	.r3{background-color: #7F5A39;}
+	.r4{background-color: #CC701E;}
+	
+	/*pinkin sävyt*/
+	.p1{background-color: #FFA2A4;}	
+	.p2{background-color: #FF5659;}	
+	.p3{background-color: #7F5152;}
+	.p4{background-color: #CC4547;}
+
+	
+	/*mediasäännöt*/
+	
+	@media (min-width: 600px) {
+		/*icons -laatikko näkyviin*/
+		.icons{
+			display:flex;
+		}
+	}	
+	
+	@media (min-width: 800px) {
+		/*yli 960px sisältö keskitetään,
+		ei veny enää*/
+		#tausta{
+			margin:auto;
+			max-width:960px;
+		}
+		.colors, .icons{
+			width:97.97666666666667%;
+			margin:1.0416666666667%;
+		}
+		/*laatikkko -laatikot puolikkaiksi
+		 ja kahteen riviin*/
+		.laatikko{
+			width:47.91666666666667%;
+			margin:1.0416666666667%;
+			float: left;
+		}
+	}	

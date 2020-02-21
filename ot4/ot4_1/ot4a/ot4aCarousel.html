@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--file: ot4a.html
+    desc: Käyttöliittymäkurssin oppimistehtävä 4, osa1:1
+			-nav-pills
+			-carousel
+    date: 2.3.2018
+    auth: Maarit Parkkonen-->
+<html lang="fi">
+<head>
+  <title>ot4a, carousel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ot4a.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <ul class="nav nav-pills nav-justified">
+		<li><a href="ot4a.html">Grid</a></li>
+		<li class="active"><a href="#">Carousel</a></li>
+		<li><a href="ot4aTable.html">Table</a></li>
+		<li><a href="ot4aCollapse.html">Collapse</a></li>
+    </ul>
+
+	<h2 class="text-center">Junkerdal, 2017</h2>
+
+	<div id="kuvat" class="carousel slide diat" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#kuvat" data-slide-to="0" class="active"></li>
+      <li data-target="#kuvat" data-slide-to="1"></li>
+      <li data-target="#kuvat" data-slide-to="2"></li>
+      <li data-target="#kuvat" data-slide-to="3"></li>
+      <li data-target="#kuvat" data-slide-to="4"></li>
+      <li data-target="#kuvat" data-slide-to="5"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="kuvat/junkerdal1.jpg" alt="junkerdal1">
+      </div>
+
+      <div class="item">
+        <img src="kuvat/junkerdal2.jpg" alt="junkerdal2">
+      </div>
+	  
+      <div class="item">
+        <img src="kuvat/junkerdal3.jpg" alt="junkerdal3">
+      </div>
+
+      <div class="item">
+        <img src="kuvat/junkerdal4.jpg" alt="junkerdal4">
+      </div>
+
+      <div class="item">
+        <img src="kuvat/junkerdal5.jpg" alt="junkerdal5">
+      </div>
+	  
+      <div class="item">
+        <img src="kuvat/junkerdal6.jpg" alt="junkerdal6">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#kuvat" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Edellinen</span>
+    </a>
+    <a class="right carousel-control" href="#kuvat" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Seuraava</span>
+    </a>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--file: ot4a.html
+    desc: Käyttöliittymäkurssin oppimistehtävä 4, osa1:1
+			-navbar
+			-grid
+			-jumbotron
+			-form
+			-modal
+    date: 2.3.2018
+    auth: Maarit Parkkonen-->
+	
+<html lang="fi">
+<head>
+  <title>ot4a: Bootstrap testailua</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ot4a.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--sivukohtaiset tyylit-->
+  <style>
+	div[class^="col-sm-"] {
+		border: 2px solid #ffffff;
+		color: #ffffff;	
+		
+	} 
+	div[class^="col-sm-"]>p{
+		font-size:20px;
+	}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		</button>
+		<p class="navbar-text small">ot4h</p>
+    </div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#">Grid</a></li>
+			<li><a href="ot4aCarousel.html">Carousel</a></li>
+			<li><a href="ot4aTable.html">Table</a></li>
+			<li><a href="ot4aCollapse.html">Collapse</a></li>
+		</ul>
+	</div>
+  </div>
+</nav>
+
+<div class="container">
+	<h2>Grid</h2>		<!--ONGELMA: miksi gridin tekstit eivät sijoitu keskelle?-->
+	<div class="row text-center">
+		<div class="col-sm-4 vanhaRoosa">
+			<p>col-4</p>	
+		</div>
+		<div class="col-sm-4 teras">
+			<p>col-4</p>			
+		</div>
+		<div class="col-sm-4 burgundi">
+			<p>col-4</p>			
+		</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-sm-6 tummaHarmaa">
+			<p>col-6</p>			
+		</div>
+		<div class="col-sm-6 punainen">
+			<p>col-6</p>			
+		</div>		
+	</div>
+	<div class="row text-center">
+		<div class="col-sm-3 teras">
+			<p>col-3</p>			
+		</div>
+		<div class="col-sm-3 vanhaRoosa">
+			<p>col-3</p>			
+		</div>
+		<div class="col-sm-3 burgundi">
+			<p>col-3</p>			
+		</div>
+		<div class="col-sm-3 tummaHarmaa">
+			<p>col-3</p>			
+		</div>		
+	</div>
+	<div class="row text-center">
+		<div class="col-sm-12 punainen">
+			<p>col-12</p>			
+		</div>	
+	</div>
+	
+	<h2>Jumbotron</h2>  
+	<div class="jumbotron">
+		<h2><small>Yrttioppi: Salvia</small></h2>      
+		<blockquote>
+		  "Vaikka hiki nousi pintaan ja päätä särki,<br>
+		   kurkkua kouri ja järkkyi järki,<br>
+		   salviayrtti kipuja poisti,<br>
+		   paransi särkyjä - ja taas järki loisti."
+		   <footer>Uppo-Nalle</footer>
+		</blockquote>
+	</div>
+	
+  <h2>Form</h2>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-1" for="enimi">Etunimi:</label>
+      <div class="col-sm-11">
+        <input type="text" class="form-control" id="enimi" placeholder="Kirjoita etunimi.." name="enimi">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-1" for="snimi">Sukunimi:</label>
+      <div class="col-sm-11">          
+        <input type="text" class="form-control" id="snimi" placeholder="Kirjoita sukunimi.." name="snimi">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-1 col-sm-11">
+        <div class="checkbox">
+          <label class="burgundi"><input type="checkbox" name="opiskelija">Olen opiskelija</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-1 col-sm-11">
+        <button type="submit" class="btn btn-default">Lähetä</button>
+      </div>
+    </div>
+  </form>
+  
+<!-- modaalipainike -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#kommentti">Loppukommentti</button>
+
+<!-- Modaali -->
+<div id="kommentti" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modaalin sisältö-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Vitsi</h4>
+      </div>
+      <div class="modal-body">
+        <p>Kaks mummoo meni mustikkaan..</p>
+		<p>toinen ei mahtunutkaan.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Sulje</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<div class="container-fluid alapalkki">
+	<p class="alapalkki">@Maarit Parkkonen 2018</p>
+</div>
+
+</body>
+</html>

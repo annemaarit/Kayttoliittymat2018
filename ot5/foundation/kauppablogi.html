@@ -1,0 +1,368 @@
+<!doctype html>
+<!--file:  kauppablogi.html
+    desc:  Verkkokauppa Trendit blogisivu
+    date:  29.3.2018
+    auth:  Maarit Parkkonen
+	frame: foundation 
+    osa kuvista: pixabay.com  -->
+	         
+<html lang="fi" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaatekauppa Trendit: Blogi</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="css/kauppa.css">
+  </head>
+  
+<body> 
+<!-- Navit -->
+<div data-sticky-container>
+  <div data-sticky data-options="marginTop:0;">
+
+	<!--menupainike pienille näytöille-->
+    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle="example-menu" ></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+	
+	<!--navbar-->
+    <div class="top-bar tsininen" id="example-menu">
+      <ul class="vertical medium-horizontal dropdown menu" data-responsive-menu="accordion medium-dropdown">
+        <li class="menu-text tsininen" style="color:#ffffff">Vaatekauppa Trendit</li>
+		<li class="tsininen"><a style="color:#BC3C00;">Blogi</a></li>
+        <li class="tsininen">
+          <a href="#">Verkkokauppa</a>
+          <ul class="menu vertical nested">
+            <li class="tsininen"><a href="#">Naiset</a></li>
+            <li class="tsininen"><a href="#">Miehet</a></li>
+            <li class="tsininen"><a href="#">Lapset</a></li>
+          </ul>
+        </li>
+        <li class="tsininen"><a href="#">Myymälä</a></li>
+		<li class="tsininen kirjeXS"><a href="#">Tilaa uutiskirje</a></li>
+      </ul>
+	  <div class="top-bar-right">
+        <ul class="menu kirje">
+          <li><button type="button" class="button" data-open="uutiskirje">Tilaa uutiskirje</button></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--uutiskirjeen tilauspainike-->
+<div class="reveal" id="uutiskirje" data-reveal>
+<!--uutiskirjeen tilausmodaali-->
+<div class="login-box">
+  <div class="row collapse expanded">
+    <div class="small-12 medium-6 column small-order-2 medium-order-1">
+      <div class="login-box-form-section">
+        <h1 class="login-box-title">Tilaa uutiskirje</h1>
+        <input class="login-box-input" type="text" name="username" placeholder="Kirjoita nimesi" />
+        <input class="login-box-input" type="email" name="email" placeholder="Kirjoita sähköpostiosoitteesi" />
+        <input class="login-box-submit-button" type="submit" name="signup_submit" value="Lähetä tilaus" />
+      </div>
+    </div>
+  </div>
+</div>
+<button class="close-button" data-close aria-label="Close modal" type="button">
+	<span aria-hidden="true">&times;</span>
+</button>
+</div> 
+
+<!--Otsikko+kuva -->
+<div class="hero-section">
+  <div class="hero-section-text">
+    <h1>Muotitrendit</h1>
+    <h5>Uusimmat muodin virtaukset</h5>
+  </div>
+</div>
+
+
+
+<!--Tekstisisältö artikkelimuodossa, blogilaatikoissa-->
+<article class="grid-container">
+ 
+<br>
+<div class="article-row-section">
+  <div class="article-row-section-inner">
+		
+	  <!--blogilaatikko 1-->
+      <article class="article-row">
+        <div class="article-row-img">
+		  <!--kuvakaruselli -->
+          <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+		  <ul class="orbit-container">
+			<button class="orbit-previous"><span class="show-for-sr">Edellinen</span>&#9664;&#xFE0E;</button>
+			<button class="orbit-next"><span class="show-for-sr">Seuraava</span>&#9654;&#xFE0E;</button>
+	
+			<li class="is-active orbit-slide">
+				<a href="#"><img class="orbit-image" src="images/kuva1.jpg" alt="trendi1"></a>
+				<figcaption class="orbit-caption">45€</figcaption>
+			</li>
+			<li class="orbit-slide">
+				<a href="#"><img class="orbit-image" src="images/kuva2.jpg" alt="trendi2"></a>
+				<figcaption class="orbit-caption">123€</figcaption>
+			</li>
+			<li class="orbit-slide">
+				<a href="#"><img class="orbit-image" src="images/kuva3.jpg" alt="trendi3"></a>
+				<figcaption class="orbit-caption">76€</figcaption>
+			</li>
+			<li class="orbit-slide">
+				<a href="#"><img class="orbit-image" src="images/kuva4.jpg" alt="trendi4"></a>
+				<figcaption class="orbit-caption">55€</figcaption>
+			</li>
+		  </ul>
+		  <nav class="orbit-bullets">
+			<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+			<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+			<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+			<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+		  </nav>
+		</div>	
+
+        </div>
+        <div class="article-row-content">
+		<!--Tekstisisältö-->
+          <h1 class="article-row-content-header">Kevään muoti on entistä sporttisempi: <br> katso kuvat ihanista takeista</h1>
+
+          <p class="article-row-content-description palstat">
+			Tänä keväänä saa pukeutua vielä viime kevättäkin sporttisemmin: unohda trenssit ja nahkarotsit,
+			sillä juuri nyt on trendikkäintä vetäistä päälle sporttinen pusakkamallinen pilottitakki.
+			Mikäli muodikkuuden ohjenuorana pidetään julkkiksia ja muotibloggaajia, sporttinen pusakka todella on tämän kevään takki.
+			Sen ei kuitenkaan tarvitse olla tylsä musta tai sininen, vaan kaikista muodikkain se on ihanan naisellisena kukkakuosilla!
+		  </p>
+          <p class="article-row-content-author">Maarit Parkkonen</p>
+          <time class="article-row-content-time">23.03.2016</time>
+        </div>
+      </article>
+
+	  <!--blogilaatikko 2-->
+	  <article class="article-row">
+        <div class="article-row-img">
+		  <!--kuvakaruselli -->
+          <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+		  <ul class="orbit-container">
+			<button class="orbit-previous"><span class="show-for-sr">Edellinen</span>&#9664;&#xFE0E;</button>
+			<button class="orbit-next"><span class="show-for-sr">Seuraava</span>&#9654;&#xFE0E;</button>
+	
+			<li class="is-active orbit-slide">
+				<a href="#"><img class="orbit-image" src="images/kuva5.jpg" alt="Garcia Jeans"></a>
+				<figcaption class="orbit-caption">Garcia Jeans</figcaption>
+			</li>
+			<li class="orbit-slide">
+				<a href="#"><img class="orbit-image" src="images/kuva6.jpg" alt="Marks & Spencer"></a>
+				<figcaption class="orbit-caption">Marks & Spencer</figcaption>
+			</li>
+			<li class="orbit-slide">
+				<a href="#"><img class="orbit-image" src="images/kuva7.jpg" alt="Twinset"></a>
+				<figcaption class="orbit-caption">Twinset</figcaption>
+			</li>
+			<li class="orbit-slide">
+				<a href="#"><img class="orbit-image" src="images/kuva8.jpg" alt="Topshop"></a>
+				<figcaption class="orbit-caption">Topshop</figcaption>
+			</li>
+		  </ul>
+		  <nav class="orbit-bullets">
+			<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+			<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+			<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+			<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+		  </nav>
+		</div>	
+        </div>
+        <div class="article-row-content">
+		<!--Tekstisisältö-->
+          <h1 class="article-row-content-header">Kierrättäminen kannattaa: <br> Merkkivaatteissa arvo säilyy todella hyvin</h1>
+
+          <p class="article-row-content-description palstat">Suomessa käytettyjen vaatteiden ja kenkien kierrättäminen on todella helppoa,
+		  sillä kauppa käy vilkkaana netissä. Monien merkkivaatteiden jälleenmyynti on taattu, joskus jopa voitolla.
+		  <a data-open="kierratys"><code>Katso</code></a>, mitkä merkit käyvät parhaiten kaupaksi käytettynä.</p>
+
+          <p class="article-row-content-author">Maarit Parkkonen</p>
+          <time class="article-row-content-time">16.03.2016</time>
+        </div>
+      </article>
+	  
+	  <!--merkkivaate -modaali-->
+	  <div class="reveal login-box-form-section" id="kierratys" data-reveal>
+		<h1 style="color:#ffffff">Arvostettuja vaatemerkkejä</h1>
+		  <table class="responsive-card-table unstriped">
+			<thead>
+			  <tr>
+				<th>Nimi</th>
+				<th>Kotisivu</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td data-label="Nimi">Garcia Jeans</td>
+				<td data-label="Email"><a href="https://www.wearegarcia.com">www.wearegarcia.com<a></td>
+			  </tr>
+			  <tr>
+				<td data-label="Nimi">Marks & Spencer</td>
+				<td data-label="Email"><a href="https://www.marksandspencerfinland.fi">www.marksandspencerfinland.fi<a></td>
+			  </tr>
+			  <tr>
+				<td data-label="Nimi">Twinset</td>
+				<td data-label="Email"><a href="https://www.twinset.com">www.twinset.com<a></td>
+			  </tr>
+			  <tr>
+				<td data-label="Nimi">Topshop</td>
+				<td data-label="Email"><a href="https://www.topshop.com">www.topshop.com<a></td>
+			  </tr>
+			</tbody>
+		  </table>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+				<span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+		
+	  <!--blogilaatikko 3-->
+      <article class="article-row">
+        <div class="article-row-img">
+		  <!--kuvakaruselli -->
+          <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+
+		  		  <ul class="orbit-container">
+			<button class="orbit-previous"><span class="show-for-sr">Edellinen</span>&#9664;&#xFE0E;</button>
+			<button class="orbit-next"><span class="show-for-sr">Seuraava</span>&#9654;&#xFE0E;</button>
+	
+			<li class="is-active orbit-slide">
+				<a href="#"><img class="orbit-image" src="images/takki1.jpg" alt="takki1"></a>
+				<figcaption class="orbit-caption">275€</figcaption>
+			</li>
+			<li class="orbit-slide">
+				<a href="#"><img class="orbit-image" src="images/takki2.jpg" alt="takki2"></a>
+				<figcaption class="orbit-caption">165€</figcaption>
+			</li>
+			<li class="orbit-slide">
+				<a href="#"><img class="orbit-image" src="images/takki3.jpg" alt="takki3"></a>
+				<figcaption class="orbit-caption">440€, Tarjous</figcaption>
+			</li>
+		  </ul>
+		  <nav class="orbit-bullets">
+			<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+			<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+			<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+		  </nav>
+		</div>	
+        </div>
+		<!--Tekstisisältö-->
+        <div class="article-row-content">
+          <h1 class="article-row-content-header">Tässä on kevään muodikkain takki!</h1>
+
+          <p class="article-row-content-description palstat">Päivien kirkastuessa ja lämmetessä untuvapomppa on aika vaihtaa keveämpään asuun. 
+		  Aivan kesätamineisiin ei vielä Suomen keväässä voida siirtyä, mutta keveät mutta lämpimät kevättakit lämmittävät ihanasti ja
+		  istuvat ihanan tyylikkäästi paksujen toppavaatteiden jälkeen.</p>
+
+          <p class="article-row-content-author">Maarit Parkkonen</p>
+          <time class="article-row-content-time">10.02.2016</time>
+        </div>
+      </article>
+	  
+	  <!--blogilaatikko 4-->
+	  <article class="article-row">
+        <div class="article-row-img">
+		  <!--kuvakaruselli -->
+          <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+		  <ul class="orbit-container">
+			<button class="orbit-previous"><span class="show-for-sr">Edellinen</span>&#9664;&#xFE0E;</button>
+			<button class="orbit-next"><span class="show-for-sr">Seuraava</span>&#9654;&#xFE0E;</button>
+	
+			<li class="is-active orbit-slide">
+				<a href="#"><img class="orbit-image" src="images/kuva9.jpg" alt="tarjous1"></a>
+				<figcaption class="orbit-caption"><span class="product-card-price">9.99€</span><span class="product-card-sale">18€</span></figcaption>
+			</li>
+			<li class="orbit-slide">
+				<a href="#"><img class="orbit-image" src="images/kuva10.jpg" alt="tarjous2"></a>
+				<figcaption class="orbit-caption"><span class="product-card-price">19.99€</span><span class="product-card-sale">32€</span></figcaption>
+			</li>
+			<li class="orbit-slide">
+				<a href="#"><img class="orbit-image" src="images/kuva11.jpg" alt="tarjous3"></a>
+				<figcaption class="orbit-caption"><span class="product-card-price">12.50€</span><span class="product-card-sale">42€</span></figcaption>
+			</li>
+		  </ul>
+		  <nav class="orbit-bullets">
+			<button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+			<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+			<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+		  </nav>
+		</div>	
+        </div>
+		<!--Tekstisisältö-->
+        <div class="article-row-content">
+          <h1 class="article-row-content-header">Nämä viime vuoden vaatetrendit jäävät nyt unholaan!</h1>
+
+          <p class="article-row-content-description palstat">
+			Viime vuosi tunnetaan erilaisista trendien sekoituksista. Yksi erikoisimmista trendeistä oli pesunkestävät terveyssandaalit
+			vaatteiden kuin vaatteiden kanssa, mutta muoti jäänee tänä vuonna historiaan. Katso mitkä muut viime vuoden villitykset
+			jäänevät unholaan.
+		  </p>
+          <p class="article-row-content-author">Maarit Parkkonen</p>
+          <time class="article-row-content-time">10.01.2016</time>
+		  <p class="article-row-content-author copy2" style="color:#000000;">copyright Verkkokauppa Trendit, 2018</p>
+        </div>
+      </article>    
+  </div>
+</div>
+</article><!--blogisisältö loppu-->
+
+<br>
+
+<!--Viestinlähetys -lomake-->
+<div class="contact-panel" id="contact-panel" data-toggler=".is-active">
+  <a class="contact-panel-button" data-toggle="contact-panel">Lähetä viesti</a>
+  <form action="">
+    <div class="row">
+      <label>Nimesi
+        <input type="text" placeholder="Etunimi Sukunimi">
+      </label>
+    </div>
+    <div class="row">
+      <label>Sähköpostisi
+        <input type="email" placeholder="email">
+      </label>
+    </div>
+    <div class="row">
+      <label>Viestisi
+        <textarea placeholder="Kerro meille.." rows="3"></textarea>
+      </label>
+    </div>
+    <div class="contact-panel-actions">
+      <button class="cancel-button" data-toggle="contact-panel">Peru</button>
+      <input type="submit" class="button submit-button" value="Lähetä">
+    </div>
+  </form>
+</div>
+
+<!--footer-->
+<footer class="social-footer">
+<div class="social-footer-left">
+  <div class="social-footer-icons">
+    <ul class="menu simple">
+      <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+      <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+</div>
+<div class="copyright">
+	<p class="copy1" style="color:#ffffff;">copyright Verkkokauppa Trendit, 2018</p>
+</div>
+</footer>
+
+<script src="js/kauppa.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

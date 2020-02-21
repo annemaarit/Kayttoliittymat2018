@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--file: ot4a.html
+    desc: Käyttöliittymäkurssin oppimistehtävä 4, osa1:1
+			-collapse
+			-dropup (koska tässä dropdown mobiililaitteessa hankala)
+    date: 2.3.2018
+    auth: Maarit Parkkonen-->
+<html lang="fi">
+<head>
+  <title>ot4a, collapse</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ot4a.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+<div class="container">
+
+  <h2>Runoja</h2>
+   <div class="panel-group" id="haitari">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#haitari" href="#uppis">Uppo-Nalle: <strong>Ihmiset tahtovat kaikenlaista</strong></a>
+        </h4>
+      </div>
+      <div id="uppis" class="panel-collapse collapse in">
+        <div class="panel-body">
+			Ihmiset tahtovat kaikenlaista,<br>
+			vieraita tavaroita vieraista maista.<br>
+			Pian ovat kaapit täynnä kamaa.<br>
+			Elämä kuitenkin yhtä ja samaa.<br>
+			Iloon ei tarpeen tavaraa hankkia.<br>
+			Onneen ei tarvita edes pankkia.
+		</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#haitari" href="#sodegran">Edith Södegran: <strong>Yön tullen</strong></a>
+        </h4>
+      </div>
+      <div id="sodegran" class="panel-collapse collapse">
+        <div class="panel-body">		
+			Yön tullen<br>
+			minä seison portailla kuuntelemassa,<br>
+			tähdet parveilevat puutarhassa<br>
+			ja minä seison pimeässä.<br>
+			Kuule, tähti putosi helähtäen!<br>
+			Älä astu ruohikolle paljain jaloin:<br>
+			puutarhani on sirpaleita täynnä. 
+		</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#haitari" href="#tabermann">Tommy Tabermann: <strong>Puhun enkeleiden kanssa</strong></a>
+        </h4>
+      </div>
+      <div id="tabermann" class="panel-collapse collapse">
+        <div class="panel-body">
+			Puhun enkeleiden kanssa <br>
+			niin kuin puhutaan äidille, veljelle,<br>
+			pyydetään apua<br>
+			sellaiseen mikä saa<br>
+			sormen jumalankin suuhun<br>
+			Enkelten nauru jos mikään<br>
+			kykenee muuttamaan<br>
+			mustan valkoiseksi<br>
+			tekemättä vääryyttä yhdellekään värille<br>
+			Enkeleille ihmeet<br>
+			ovat pelkkä järjestelykysymys<br>
+			Niin vajavaiset ovat tämän vajavaisen pään<br>
+			kaksi kuumottavaa korvaa,<br>
+			eivät kuule enkelten naurua<br>
+			Kolmas korva on tukossa<br>
+			syvästä murheesta<br>
+			ja ihmisten typeristä puheista
+		</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#haitari" href="#huovi">Hannele Huovi: <strong>Kun on oikein pieni</strong></a>
+        </h4>
+      </div>
+      <div id="huovi" class="panel-collapse collapse">
+        <div class="panel-body">
+			Kun on oikein pieni<br>
+			voi lentää linnun untuvalla,<br>
+			nukkua orvokinlehden alla,<br>
+			kun on oikein pieni.<br>
+			<br>
+			Kun on oikein pieni,<br>
+			voi keinua heinässä heiluvassa,<br>
+			levätä kukassa tuoksuvassa,<br>
+			kun on oikein pieni.<br>
+			<br>
+			Kun on oikein pieni,<br>
+			voi istua lumihiutaleille,<br>
+			ja liitää maailman tuulien teille,<br>
+			kun on oikein pieni.
+		</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#haitari" href="#Laaksonen">Heli Laaksonen: <strong>Uure vuore ohjei</strong></a>
+        </h4>
+      </div>
+      <div id="Laaksonen" class="panel-collapse collapse">
+        <div class="panel-body">
+			Ot käpy pois kenkäst.<br>
+			Kaar vesi pois saappaast.<br>
+			Nost ämpär silmiltäs.<br>
+			Jua kuppis tyhjäks.<br>
+			Ol ilone, ol valone, ol pulune.<br>
+			Älä lait kät sirkkeli.<br>
+			Älä purot kirvest kintuil.<br>
+			Älä unohr kotti avaimi.<br>
+			Älä karot annetui syrämei.<br>
+		</div>
+      </div>
+    </div>	 
+  </div>   
+  
+  <div class="dropup">
+	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+	Siirry <span class="caret"></span></button>
+	<ul class="dropdown-menu">
+		<li class="disabled"><a href="ot4aCollapse.html">Collapse</a></li>	
+		<li><a href="ot4aTable.html">Table</a></li>	
+		<li><a href="ot4aCarousel.html">Carousel</a></li>			
+		<li><a href="ot4a.html">Grid</a></li>
+	</ul>
+  </div>   
+</div>
+
+</body>
+</html>

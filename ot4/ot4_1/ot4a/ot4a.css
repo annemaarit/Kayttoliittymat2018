@@ -1,0 +1,37 @@
+/* 	file: ot4a.css
+	desc: ot4a.html tyylimääritykset
+	date: 1.3.2018
+	auth: Maarit Parkkonen */
+
+.diat {
+	max-width:650px;
+	margin:auto;
+}
+
+label{padding:10px;}
+
+form {
+	border:1px solid #000000;
+	padding:10px;
+	margin-bottom:20px;
+	}
+
+.alapalkki{
+	margin-top:20px;	
+	background-color:#000000;
+	color:#ffffff;
+	text-align:center;
+}
+/*värit:
+http://colorpalettes.net/color-palette-3723/ 
+
+tämän olisi voinut tehdä myös:
+bootstrapin Contextual Colors and Backgrounds tyylisesti
+
+*/
+
+.tummaHarmaa 	{background-color:#302a2c;}
+.teras 			{background-color:#a0a4ab;}
+.vanhaRoosa 	{background-color:#d29ea4;}
+.punainen 		{background-color:#b00002;}
+.burgundi 		{background-color:#3e0c11;}

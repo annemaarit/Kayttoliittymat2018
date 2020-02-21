@@ -1,0 +1,17 @@
+/* file: mp2.js
+   desc: ylikirjoittaa Mikkelin Palloilijoiden
+		 tyylisivuston määrityksiä faniposti ja kuvagalleria sivuille
+   date: 28.1.2018
+   auth: Maarit Parkkonen
+ */
+ 
+body {
+	padding-top: 0px;
+}
+
+.tausta {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+

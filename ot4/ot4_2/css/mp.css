@@ -1,0 +1,123 @@
+/* file: mp.js
+   desc: Mikkelin Palloilijoiden sivuston
+		 omat tyylimääritykset (Templaten lisäksi)
+   date: 4.3.2018
+   auth: Maarit Parkkonen
+ */
+body {
+	font-family:arial, helvetica, sans-serif;
+	padding-top: 54px;
+	background-color:#EDEDED;
+}
+
+.tausta {
+	background-color: #ffffff;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.menu {
+	background-image:url("../kuvat/vedustus.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+	background-size: 100% 100%;
+	color: #ffffff;
+}
+
+.menu:hover {
+	color: #bdbdbd;
+}
+
+.logo {padding-top:0px;}
+  
+a {color:#7c70fa;}
+
+.tausta2 {
+	background-image:url("../kuvat/edustus.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+	background-size: 100% 100%;
+	color: #ffffff;
+}
+
+/*div[class^="col-md-"] {
+		border: 1px solid red;
+	} */
+
+.keskita {
+	display: block;
+	margin: auto;
+	}
+
+.ottelut{
+	line-height:0.8;
+}
+
+ul{list-style-type: none;}
+li{margin:15px 0px 0px 0px;}
+
+.ajankohtainen{display:fluid;}
+
+.tilaa {margin: 20px 0px;}
+
+.otsake {color: #000000;}
+
+.some {margin-bottom:10px;}
+
+.painike{
+	margin:10px;
+}
+
+.painikeryhma{margin-top: 20px;}
+
+.sponsorit{margin:10px;}
+
+.diat {
+	max-width:600px;
+	margin:auto;
+}
+
+.kuva{
+	max-width:430px;
+	margin:auto;
+	} 
+
+.kuvareunus{
+	margin-top: 10px;
+}
+
+
+.lomake {
+	max-width:700px;
+	margin:auto;
+	margin-top:10px;
+	}
+	
+.pikkupainike {
+	min-width:50px;
+}
+
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+  .logo {padding-top:10px;}
+  .kuva{
+	width:600px;
+	height:auto;
+	margin:auto;
+	}  
+}
+
+@media (max-width: 991px) {
+	.marginTop{margin-top:10px;}
+	.tekstikoko {font-size: 14px;}
+}
+
+
+@media (max-width: 767px) {
+	.ajankohtainen{display:none;}
+	.tilaa {margin: 0px 0px;}
+}
+
